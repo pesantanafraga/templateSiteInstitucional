@@ -1,0 +1,145 @@
+<!-- Desenvolvedor do site: https://github.com/pesantanafraga -->
+<!DOCTYPE html>
+<html lang="pt_BR" class="hydrated">
+<head>
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dominio.com.br">
+    <meta property="og:title" content="Seu título">
+    <meta property="og:site_name" content="Nome do site">
+    <meta property="og:description" content="Sua descrição">
+    <meta property="og:image" content="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Logo%20Farmacia%20Integrada%20Sem%20Fundo%20-%20PS.png">
+    <meta property="og:image:type" content="png">
+    <meta property="og:image:alt" content="Logotipo Farmácia Integrada">
+    <meta property="og:image:width" content="50">
+    <meta property="og:image:height" content="50">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Início</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a id="logotipo" href="./index.html" class="logotipo">
+                <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Farmacia_Integrada_LOGO_1.png" alt="Logotipo da Empresa" width="200" height="40">
+            </a>
+            <nav id="menu-items">
+                <a class="link" href="./index.html">Início</a>
+                <a class="link" href="./pages/sobre.html">Sobre</a>
+                <a class="link" href="./pages/contato.html">Contato</a>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="menuHamburguer()">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
+              </a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="capa-index">
+            <div class="imagem-capa">
+                <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Banner%20farmacia%20integrada.png" alt="Imagem da Capa">
+            </div>
+            <!-- Caso queira adicionar na capa
+            <h1>Título</h1>
+            <h3>Subtítulo</h3>
+            <hr>
+            <p>Descrição</p>
+            -->
+        </div>
+
+        <article class="servicos">
+            <h2 class="titulo-geral">Nossos Serviços</h2>
+            <div class="items-container">
+                <div class="item-direito">
+                    <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Manipula%C3%A7%C3%A3o%20Humana.jpg" alt="Foto de medicamos manipulados fábricados pela farmácia integrada">
+                    <div class="items-textos">
+                        <h3>Florais e Hemeopatia</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="items-container">
+                <div class="item-esquerdo">
+                    <div class="items-textos">
+                        <h3>Florais e Hemeopatia</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
+                    </div>
+                    <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Manipula%C3%A7%C3%A3o%20Veterin%C3%A1ria.jpg" alt="Foto de biscoitos para pets sendo feitos com base em medicamentos manipulados">
+                </div>
+            </div>
+            
+            <div class="items-container">
+                <div class="item-direito">
+                    <img src="" alt="">
+                    <div class="items-textos">
+                        <h3>Florais e Hemeopatia</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-esquerdo">
+                <div class="items-textos">
+                    <h3>Florais e Hemeopatia</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
+                </div>
+                <img src="" alt="">
+            </div>
+
+            <div class="items-container">
+                <div class="item-direito">
+                    <img src="" alt="">
+                    <div class="items-textos">
+                        <h3>Florais e Hemeopatia</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="localizacao">
+            <div id="google-maps">
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7292.9724897170545!2d-46.298573!3d-23.94324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d1fe2ff501f20b%3A0xfc34565377bb1ef5!2sFarm%C3%A1cia%20Integrada!5e0!3m2!1spt-BR!2sus!4v1692901769218!5m2!1spt-BR!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="funcionamento">
+                    <h2>Horário de Funcionamento</h2>
+                    <p>Segunda - Sexta</p><p>08:00H - 19:00H</p>
+                    <p>Sábado</p><p>08:00H - 18:00H</p>
+                    <p>Domingo</p><p>Fechado</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <div class="endereco">
+                <span>Avenida Ana Costa, 61, sala 15, Gonzaga, Santos, São Paulo</span>
+            </div>
+
+            <div class="contato">
+                <span>(13)3235-7735 <br> bistec@bistec.com.br</span>
+            </div>
+
+            <div class="informacoes">
+
+            </div>
+        </div>
+        <hr class="linha-rodape">
+    <div class="copyright">
+        <span>©2023 Bistec Soft · bistec.com.br</span>
+    </div>
+    </footer>
+
+    <button id="whatsapp"><a href="https://wa.me/5513992101804" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #FFF;"></i></a></button>
+    <button id="up-bottom"><i class="fa-solid fa-arrow-up-long"></i></button>
+
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/920f64dd93.js" crossorigin="anonymous"></script>
+</body>
+</html>
