@@ -16,21 +16,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Início</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
     <header>
-        <div class="menu">
-            <a id="logotipo" href="../index.html">
-                <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Farmacia_Integrada_LOGO_1.png" alt="Logotipo da Empresa" width="200" height="40">
+        <nav class="menu">
+            <a id="logotipo" href="../index.html" class="logotipo">
+                <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Farmacia_Integrada_LOGO_1.png" alt="Logotipo da Empresa" width="250" height="38">
             </a>
-            <a href="../index.html">Início</a>
-            <a href="./sobre.html">Sobre</a>
-            <a href="./contato.html">Contato</a>
-        </div>
+            <nav id="menu-items">
+                <a class="link" href="../index.html">Início</a>
+                <a class="link" href="./sobre.html">Sobre</a>
+                <a class="link" href="./contato.html">Contato</a>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="menuHamburguer()">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
+              </a>
+        </nav>
     </header>
 
 
@@ -67,7 +72,7 @@
     <button id="whatsapp"><a href="https://wa.me/5513992101804" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a></button>
     <button id="up-bottom"><i class="fa-solid fa-arrow-up-long"></i></button>
 
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script src="https://kit.fontawesome.com/920f64dd93.js" crossorigin="anonymous"></script>
 </body>
 </html>

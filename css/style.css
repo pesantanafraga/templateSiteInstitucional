@@ -6,7 +6,9 @@
 
 /* TAGS HTML */
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 
@@ -58,35 +60,130 @@
 }
 .titulo-geral {
   color: #7c2c4c;
-  font-size: x-large;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 3%;
-  margin-left: 1.5%;
+  margin-left: 5%;
 }
-.items-container {
+.itens-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .item-direito {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 .item-direito img {
-  width: 80%;
+  width: 90%;
   height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .item-esquerdo {
   display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 .item-esquerdo img {
-  width: 200px;
-  height: 200px;
+  width: 90%;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-
+.itens-textos {
+  width: 90%;
+  margin: 5%;
+}
+.itens-textos h3 {
+  font-size: 23px;
+  font-weight: 500;
+  padding-bottom: 1.5%;
+  color: #7c2c4c;
+}
+.itens-textos p {
+  font-size: 17px;
+}
+.localizacao {
+  width: 90%;
+  margin: 5%;
+}
+.funcionamento {
+  display: flex;
+  flex-direction: column;
+}
+.funcionamento h2 {
+  font-size: 23px;
+  font-weight: 600;
+  color: #7c2c4c;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+.funcionamento p {
+  margin-left: 5%;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
+  }
+.rodape {
+  background-color: #293b83;
+  color: #FFF;
+}
+.endereco-footer {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 4%;
+  border-bottom: #FFF solid 1px;
+}
+.endereco-footer h4 {
+  font-size: 18px;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+.endereco-footer span {
+  font-size: 15px;
+}
+.contato-footer {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 4%;
+  border-bottom: #FFF solid 1px;
+  display: flex;
+  flex-direction: column;
+}
+.contato-footer h4 {
+  font-size: 18px;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+.contato-footer span {
+  font-size: 15px;
+  padding-bottom: 1%;
+}
+.informacoes-footer {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 4%;
+}
+.informacoes-footer h4 {
+  font-size: 18px;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+.informacoes-footer span {
+  font-size: 15px;
+}
+.copyright {
+  background-color: #293b83;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  padding: 2%;
+}
 
 
 /* IDS */
@@ -98,39 +195,59 @@
 #whatsapp {
   display: fixed;
   position: fixed;
-    bottom: 10%;
-    right: 3%;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #25D366;
-    cursor: pointer;
-    padding: 2%;
-    border-radius: 50%;
-    font-size: 1.5rem;
+  bottom: 12%;
+  right: 3%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #25D366;
+  cursor: pointer;
+  padding-left: 2%;
+  border-radius: 50%;
+  font-size: 30px;
 }
 #whatsapp:hover {
+  transition: ease-in-out 0.2s;
   transform: scale(1.5);
 }
 
 #up-bottom {
-    display: none;
-    position: fixed;
-    bottom: 3%;
-    right: 3%;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #7c2c4c;
-    cursor: pointer;
-    padding: 2%;
-    border-radius: 50%;
-    font-size: 1.5rem;
+  display: none;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #7c2c4c;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 30px;
   }
   #up-bottom:hover {
-    transition: ease-in 0.5s;
+    transition: ease-in 0.2s;
     background-color: white;
   }
+  #separador-maps {
+    color: black;
+    border: solid 1px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  #google-maps {
+    width: 100%;
+    height: auto;
+  }
+  #mapa {
+    width: 90%;
+    height: auto;
+    margin: 5%;
+  }
+  #linha-rodape {
+    color: #000;
+    border: solid 1px;
+  }
+
 
 
   /* RESPONSIVIDADES */
@@ -138,26 +255,8 @@
   /* MOBILE */
 
 
-  @media screen and (max-width: 600px) {
-    .menu a:not(:first-child) {display: none;}
-    .menu a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .menu.responsive {position: relative;}
-    .menu.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .menu.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
+  
+
 
 
   /* TABLET */
