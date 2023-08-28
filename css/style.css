@@ -184,6 +184,28 @@ html{
   text-align: center;
   padding: 2%;
 }
+.botao-receita {
+  width: 90%;
+  display: flex;
+}
+.botao-receita button {
+  font-size: 17px;
+  background-color: transparent;
+  border: 2px solid #7c2c4c;
+  border-radius: 5px;
+}
+.botao-receita button a {
+  text-decoration: none;
+  color: #000;
+}
+.botao-receita button:hover {
+  background-color: #293b83;
+  border: 2px solid #293b83;
+  transition: ease-in 0.2s;
+}
+.botao-receita button a:hover {
+  color: #FFF;
+}
 
 /* Página Sobre */
 
