@@ -15,7 +15,7 @@ function scrollFunction() {
   //Menu Hamburguer
 
   function menuHamburguer() {
-    var x = document.getElementById("menu-items");
+    var x = document.getElementById("menu-itens");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {

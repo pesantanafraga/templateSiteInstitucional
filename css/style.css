@@ -20,7 +20,7 @@ html{
   background-color: white;
   position: relative;
 }
-.menu #menu-items {
+.menu #menu-itens {
   display: none;
 }
 .menu a {
@@ -184,6 +184,36 @@ html{
   text-align: center;
   padding: 2%;
 }
+
+/* Página Sobre */
+
+.sobre-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+.imagem-sobre {
+  width: 90%;
+  margin: 5%;
+}
+.imagem-sobre img {
+   width: 100%;
+}
+.sobre-container h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #7c2c4c;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+.sobre-container p {
+  font-size: 16px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 2%;
+}
+
 
 
 /* IDS */
