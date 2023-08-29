@@ -18,7 +18,17 @@ function scrollFunction() {
     var x = document.getElementById("menu-itens");
     if (x.style.display === "block") {
       x.style.display = "none";
+      x.className += " responsive";
     } else {
       x.style.display = "block";
+    }
+  }
+
+  function menuHamburguer2() {
+    var x = document.getElementById("meuMenu");
+    if (x.className === "menu") {
+      x.className += " responsive";
+    } else {
+      x.className = "menu";
     }
   }
