@@ -1,192 +1,146 @@
-<!-- Desenvolvedor do site: https://github.com/pesantanafraga -->
+<!-- Desenvolvido por: https://github.com/pesantanafraga -->
 <!DOCTYPE html>
-<html lang="pt_BR" class="hydrated">
+<html lang="pt-BR">
+
 <head>
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dominio.com.br">
+    <meta property="og:url" content="seu domínio">
     <meta property="og:title" content="Seu título">
     <meta property="og:site_name" content="Nome do site">
     <meta property="og:description" content="Sua descrição">
-    <meta property="og:image" content="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Logo%20Farmacia%20Integrada%20Sem%20Fundo%20-%20PS.png">
-    <meta property="og:image:type" content="png">
-    <meta property="og:image:alt" content="Logotipo Farmácia Integrada">
-    <meta property="og:image:width" content="50">
-    <meta property="og:image:height" content="50">
+    <meta property="og:image" content="Url do seu banco de imagens">
+    <meta property="og:image:type" content="tipo do arquivo se é png, jpg ou jpeg">
+    <meta property="og:image:alt" content="texto alternativo do logo">
+    <meta property="og:image:width" content="valor">
+    <meta property="og:image:height" content="valor">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Início</title>
+    <title>Início - Template 1</title>
+    <link rel="shortcut icon" href="https://ik.imagekit.io/bistecbr/simbolo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
+
 <body>
+
     <header>
-        <nav class="menu" id="meuMenu">
-            <a href="./index.html" class="logotipo" id="logotipo">
-                <img src="https://ik.imagekit.io/bistecbr/logo-bistec.png" alt="logotipo Bistec" id="logo-empresa">
+        <nav class="menu" id="menu-nav">
+            <a href="./index.html" class="active">
+                <img id="logotipo" src="https://ik.imagekit.io/pu6yhxkub/Logos/Principal.png" alt="Logotipo empresa Bistec">
             </a>
             <a href="./index.html">Início</a>
             <a href="./pages/sobre.html">Sobre</a>
-            <a href="javascript:void(0);" class="icon" onclick="menuHamburguer2()">
+            <a href="javascript:void(0);" class="icon" onclick="menuResponsivo()">
                 <i class="fa-solid fa-bars" style="color: #000000;"></i>
             </a>
-          </nav>
+        </nav>
     </header>
 
-
     <main>
-        <div class="capa-index">
-            <div class="imagem-capa">
-                <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Banner%20farmacia%20integrada.png" alt="Imagem da Capa">
-            </div>
-            <!-- Caso queira adicionar na capa
-            <h1>Título</h1>
-            <h3>Subtítulo</h3>
-            <hr>
-            <p>Descrição</p>
-            -->
-        </div>
-
-        <article class="servicos">
-            <h2 class="titulo-geral">Nossos Serviços</h2>
-
-            <div class="itens-container">
-                <div class="item-direito">
-                    <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Manipula%C3%A7%C3%A3o%20Humana.jpg" alt="Foto de medicamos manipulados fábricados pela farmácia integrada">
-                    <div class="itens-textos">
-                        <h3>Serviço 1</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
-                    </div>
-                    <div class="botao-servico">
-                        <button>
-                            <a href="#" title="#">Serviço 1</a>
-                        </button>
-                    </div>
-                </div>    
-            </div>
-            
-            <div class="itens-container">
-                <div class="item-esquerdo">
-                    <div class="botao-servico">
-                        <button>
-                            <a href="#" title="#">Serviço 2</a>
-                        </button>
-                    </div>
-                    <div class="itens-textos">
-                        <h3>Serviço 2</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
-                    </div>
-                    <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/Manipula%C3%A7%C3%A3o%20Veterin%C3%A1ria.jpg" alt="Foto de biscoitos para pets sendo feitos com base em medicamentos manipulados">
+        <!--Capa-->
+        <section id="apresentacao">
+            <div class="banner-container">
+                <div class="banner">
+                    <img src="https://ik.imagekit.io/pu6yhxkub/Banners/Seu%20banner%20aqui.png" alt="Banner da bistec">
                 </div>
             </div>
-            
-            <div class="itens-container">
-                <div class="item-direito">
-                    <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/florais.jpeg" alt="Foto de um produto floral">
-                    <div class="itens-textos">
-                        <h3>Serviço 3</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
-                    </div>
-                    <div class="botao-servico">
-                        <button>
-                            <a href="#" title="#">Serviço 3</a>
-                        </button>
+        </section>
+
+        <!--Produtos-->
+        <section id="produtos">
+            <h2>Seus produtos</h2>
+            <hr class="separador">
+            <div class="produtos-container">
+
+                <div class="item-impar">
+                    <img src="https://ik.imagekit.io/pu6yhxkub/Site1/desenvolvimento.jpg" alt="Texto alternativo da imagem">
+                    <div class="info-produto">
+                        <h3>Produto 1</h3>
+                        <hr class="line-produto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita unde ea eligendi adipisci odio magnam perspiciatis veniam sapiente, vero officiis commodi dolores distinctio id dolore, hic iste eius atque!</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="itens-container">
-                <div class="item-esquerdo">
-                    <div class="botao-servico">
-                        <button>
-                            <a href="#" title="#">Serviço 4</a>
-                        </button>
+                <div class="item-par">
+                    <div class="info-produto">
+                        <h3>Produto 2</h3>
+                        <hr class="line-produto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores officia dignissimos earum quis impedit assumenda illo alias doloremque! Magnam, tempora quidem id possimus ex vel repellendus doloremque nam ullam.</p>
                     </div>
-                    <div class="itens-textos">
-                        <h3>Serviço 4</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
-                    </div>
-                    <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/drogaria.jpeg" alt="Foto de medicamentos vendidos pela farmácia integrada">
+                    <img src="https://ik.imagekit.io/pu6yhxkub/Site1/IA.jpg" alt="Texto alternativo da imagem">
+                </div>
+
+            </div>
+        </section>
+
+        <!--Localização-->
+        <section id="localizacao">
+            <h2>Localização</h2>
+            <hr class="separador">
+            <div class="mapa-container">
+                <div class="google-maps">
+                    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.4111568555286!2d-46.33242042460368!3d-23.94589687853754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03af77f61aad%3A0x4961ff979c40b583!2sBISTEC%20BR%20-%20Servi%C3%A7os%20de%20tecnologia%20para%20todas%20as%20empresas.!5e0!3m2!1spt-BR!2sbr!4v1693333842043!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-
-            <div class="itens-container">
-                <div class="item-direito">
-                    <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/produtos%20naturais.jpeg" alt="Foto de produtos naturais vendidos pela farmácia integrada">
-                    <div class="itens-textos">
-                        <h3>Serviço 5</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
-                    </div>
-                    <div class="botao-servico">
-                        <button>
-                            <a href="#" title="#">Serviço 5</a>
-                        </button>
-                    </div>
-                </div>
+            <div class="funcionamento">
+                <h2>Horário de Funcionamento</h2>
+                <hr class="separador">
+                <p>Segunda-Feira - 08:15H - 18:00H</p>
+                <p>Terça-Feira - 08:15H - 18:00H</p>
+                <p>Quarta-Feira - 08:15H - 18:00H</p>
+                <p>Quinta-Feira - 08:15H - 18:00H</p>
+                <p>Sexta-Feira - 08:15H - 18:00H</p>
+                <p>Sábado - Fechado</p>
+                <p>Domingo - Fechado</p>
             </div>
-
-            <div class="itens-container">
-                <div class="item-esquerdo">
-                    <div class="botao-servico">
-                        <button>
-                            <a href="#" title="#">Serviço 6</a>
-                        </button>
-                    </div>
-                    <div class="itens-textos">
-                        <h3>Serviço 6</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis id aliquam quos voluptate magni a, ad beatae consequuntur. Incidunt repudiandae voluptate ea ipsam dolor blanditiis voluptatum eveniet atque maxime numquam?</p>
-                    </div>
-                    <img src="https://ik.imagekit.io/pu6yhxkub/Farmacia%20Integrada/suplementos.jpeg" alt="Foto de suplementos alimentares vendidos pela farmácia integrada">
-                </div>
-            </div>
-
-        </article>
-
-        <hr id="separador-maps">
-
-        <article class="localizacao">
-            <div id="google-maps">
-                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.4111568555286!2d-46.33242042460368!3d-23.94589687853754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03af77f61aad%3A0x4961ff979c40b583!2sBISTEC%20BR%20-%20Servi%C3%A7os%20de%20tecnologia%20para%20todas%20as%20empresas.!5e0!3m2!1spt-BR!2sbr!4v1693333842043!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="funcionamento">
-                    <h2>Horário de Funcionamento</h2>
-                    <p>Segunda à Sexta - 08:15H - 18:00H</p>
-                    <p>Sábado - Fechado </p>
-                    <p>Domingo - Fechado</p>
-                </div>
-            </div>
-        </article>
+        </section>
     </main>
 
     <footer>
-        <div class="rodape">
-            <div class="endereco-footer">
-                <h4>Endereço</h4>
-                <span>Avenida Ana Costa, 61, sala 15, Gonzaga, Santos, São Paulo</span>
-            </div>
-
-            <div class="contato-footer">
-                <h4>Contato</h4>
-                <span>(13)3235-7735</span> 
-                <span>bistec@bistec.com.br</span>
-            </div>
-
-            <div class="informacoes-footer">
-                <h4>Informações Adicionais</h4>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iusto adipisci corrupti iste rem, asperiores facere cumque maiores aliquam unde, sint inventore magnam dolores.</span>
-            </div>
+        <!--Endereço-->
+        <div id="endereco">
+            <h3>Endereço</h3>
+            <hr class="separador-footer">
+            <span>Avenida Ana Costa 61, Sala 15, Gonzaga, Santos, São Paulo</span>
         </div>
 
-        <hr id="linha-rodape">
+        <!--Contato-->
+        <div id="contato">
+            <h3>Contato</h3>
+            <hr class="separador-footer">
+            <span>(13) 3235-7735</span><br>
+            <span>(13) 99163-0471</span><br>
+            <span>bistec@bistec.com.br</span>
+        </div>
 
-    <div class="copyright">
-        <span>©2023 Bistec Soft · bistec.com.br</span>
-    </div>
+        <!--Informações-->
+        <div id="informacoes">
+            <h3>Informações</h3>
+            <hr class="separador-footer">
+            <span>Bistec - Consultoria em TI desde 1999.</span>
+        </div>
+
+        <hr id="separador-copyright">
+        
+        <!--Copyright-->
+        <div id="copyright">
+            <a id="link-copyright" href="https://bistec.com.br" target="_blank">© 2023 Bistec Soft - bistec.com.br</a>
+        </div>
     </footer>
 
-    <button id="whatsapp"><a href="https://wa.me/5513992101804" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #FFF;"></i></a></button>
-    <button id="up-bottom" onclick="topFunction()" title="Voltar ao topo"><i class="fa-solid fa-arrow-up-long"></i></button>
+    <!-- Fixed Buttons -->
+
+    <div id="whatsapp">
+        <a href="https://wa.me/5513992101804" target="_blank" title="Atendimento WhatsApp Online">
+            <img id="whatsapp-logo" src="https://ik.imagekit.io/pu6yhxkub/%C3%8Dcones/whatsapp-icon.png" alt="Logotipo do WhatsApp">
+        </a>
+    </div>
+
+    <button id="scroll-up" onclick="topFunction()" title="Voltar para cima"><i class="fa-solid fa-arrow-up-long"></i></button>
+
+    <!-- Scripts -->
 
     <script src="./js/script.js"></script>
     <script src="https://kit.fontawesome.com/920f64dd93.js" crossorigin="anonymous"></script>
