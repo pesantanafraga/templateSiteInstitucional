@@ -40,7 +40,7 @@ footer {
     display: none;
 }
 .menu a.icon {
-    margin-top: 1%;
+    margin-top: 1.5%;
 }
 .menu a.icon:hover {
     background-color: transparent;
@@ -81,6 +81,7 @@ footer {
 }
 .item-impar img {
     width: 100%;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
 }
 .item-par {
     width: 90%;
@@ -90,6 +91,7 @@ footer {
 }
 .item-par img {
     width: 100%;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
 }
 .info-produto {
     width: 94%;
@@ -246,6 +248,7 @@ footer {
 }
 #foto-sobre {
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #whatsapp {
     display: fixed;
@@ -309,3 +312,101 @@ footer {
       text-align: left;
     }
   }
+
+  /*Responsividades*/
+
+  /*Tablets*/
+
+@media screen and (min-width: 769px) {
+    
+    /*Classes*/
+
+    .menu a {
+        float: right;
+        font-size: 20px;
+        margin-right: 2%;
+        margin-top: 0.8%;   
+    }
+    .menu a.active {
+        float: left;
+        margin-top: 0;
+    }
+    .menu a:hover {
+        background-color: transparent;
+    }
+    .separador {
+        width: 10% ;
+    }
+    .item-impar {
+        width: 85%;
+        margin: auto;
+    }
+    .item-par {
+        width: 85%;
+        margin: auto;
+    }
+    .info-produto {
+        margin-bottom: 7%;
+    }
+    .info-produto h3 {
+        font-size: 24px;
+    }
+    .info-produto p {
+        font-size: 18px;
+    }
+    .google-maps {
+        height: auto;
+    }
+    .funcionamento h2 {
+        font-size: 29px;
+    }
+    .funcionamento p {
+        font-size: 18px;
+    }
+    .sobre {
+        width: 85%;
+        margin: auto;
+    }
+    .historia h2 {
+        font-size: 29px;
+    }
+    .historia p {
+        font-size: 18px;
+    }
+
+    /*Ids*/
+    
+    #produtos h2 {
+        font-size: 29px;
+    }
+    #localizacao {
+        margin-top: 3%;
+    }
+    #localizacao, h2 {
+        font-size: 29px;
+    }
+    #mapa {
+        height: 350px;
+    }
+    #endereco h3 {
+        font-size: 21px;
+    }
+    #endereco span {
+        font-size: 17px;
+    }
+    #contato h3 {
+        font-size: 21px;
+    }
+    #contato span {
+        font-size: 17px;
+    }
+    #informacoes h3 {
+        font-size: 21px;
+    }
+    #informacoes span {
+        font-size: 17px;
+    }
+    #link-copyright {
+        font-size: 16px;
+    }
+}
