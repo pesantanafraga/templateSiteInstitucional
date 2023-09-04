@@ -460,10 +460,41 @@ footer {
         width: 10%;
     }
     .mapa-container {
-        width: 50%;
+        width: 90%;
+        height: 400px;
     }
     .funcionamento {
         width: 40%;
+        margin: 5%;
+        display: block;
+    }
+    .funcionamento h2 {
+        font-size: 29px;
+        font-weight: 800;
+    }
+    .funcionamento p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .separador-footer {
+        width: 7%;
+    }
+    .sobre {
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    .historia {
+        margin: 5%;
+    }
+    .historia h2 {
+        font-size: 29px;
+        padding-bottom: 2%;
+    }
+    .historia p {
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 1.5%;
     }
 
     /*Ids*/
@@ -472,11 +503,63 @@ footer {
         font-size: 29px;
         font-weight: 800;
     }
-    #localizacao {
-        display: inline;/*Corrigir aqui*/
-    }
-    #localizacao, h2 {
+    #localizacao h2 {
         font-size: 29px;
         font-weight: 800;
     }
+    #endereco h3 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    #endereco span {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #contato h3 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    #contato span {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #informacoes h3 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    #informacoes span {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #link-copyright {
+        font-size: 18px;
+    }
+    #foto-sobre {
+        width: 50%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1367px) {
+
+    /*Classes*/
+
+    .item-impar img {
+        width: 35%;
+    }
+    .item-par img {
+        width: 35%;
+    }
+
+    /*Ids*/
+
+    #google-maps {
+        width: 70%;
+    }
+    #mapa {
+        height: 300px;
+    }
+    #foto-sobre {
+        width: 40%;
+    }
+
 }
